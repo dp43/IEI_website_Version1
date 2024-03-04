@@ -1,0 +1,24 @@
+<div class="col-xl-5 col-lg-5 d-none d-lg-block">
+                        <div class="slider-info-list">
+                           <ul>
+                              <li>
+                                 <span>3.5K</span>Free Pro Courses
+                              </li>
+                              <li>
+                                 <span>235K</span>Worldwide Students
+                              </li>
+                              <li>
+                                 <span>4.7 <i class="fi fi-ss-star"></i></span>Worldwide Review
+                              </li>
+                           </ul>
+                        </div>
+    </div>
+
+
+
+
+     <div class="slider-btn">
+                              <a class="tp-btn mr-5" href="course-list.html">Explore Courses</a>
+                              <a class="tp-s-border-btn" href="course-list.html">Watch Videos</a>
+                           </div>
+                  
