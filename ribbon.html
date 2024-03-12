@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Website Inauguration</title>
+    <style>
+        body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #ff9900;  
+    }
+
+    #ribbon {
+        /* Customize the styles based on your Figma design */
+        background-color: #ff9900;
+        color: #ff9900;
+        padding: 15px 30px;
+        font-size: 18px;
+        cursor: pointer;
+        border-radius: 5px;
+        text-align: center;
+        user-select: none;
+        outline: none;
+    }
+    @keyframes fade {
+      from {
+        opacity: 1;
+      }
+
+      to {
+        opacity: 0;
+      }
+    }
+
+    .blackout {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      animation: fade 5s ease-in-out forwards;
+    }
+
+    </style>
+</head>
+<body>
+    <button onclick="blackoutAndRedirect()" style="background-color: #ff9900; border: #ff9900;">
+    <div style="color: black;">
+    <div id="ribbon" tabindex="0" onclick="playRibbonCutting()" style="color: black;">
+        <!-- You can insert the exported image or recreate the ribbon using CSS -->
+        <img src="assets/Ribbon.png" alt="Ribbon">
+
+    </div>
+</div>
+</button>
+<script>
+    function blackoutAndRedirect() {
+      // Get the body element
+      var body = document.body;
+
+      // Add the blackout class to the body
+      body.classList.add("blackout");
+
+      // Wait for a specific duration (in milliseconds)
+      setTimeout(function() {
+        // Redirect to the parent page (adjust the URL accordingly)
+        window.location.href = 'Parent-Page.html';
+      }, 5000); // Adjust the duration based on your needs
+    }
+
+    // Call the function to start the blackout and redirection
+  </script>
+</body>
+</html>
